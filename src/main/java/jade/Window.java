@@ -5,8 +5,6 @@ import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 import util.Time;
 
-import java.util.logging.Level;
-
 import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
@@ -50,7 +48,7 @@ public class Window {
     }
 
     public static Window get() {
-        if (Window.window ==null){
+        if (Window.window == null){
             Window.window = new Window();
         }
 
